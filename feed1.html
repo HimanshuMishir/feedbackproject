@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  overflow: hidden;
+  background-color: #FC8110;
+  
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: red;
+}
+li.log {
+  border: 1px solid #C70039;
+}
+li.sig {
+  border: 1px solid #C70039;
+}
+div.logo{
+  border-radius: 8px;
+  text-align: left;
+  margin: 5px;
+  padding-left: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="logo">
+      <hr/>
+      <img src="./Images/logo.png">
+      <img src="./Images/ccsu.png">
+    </div>
+
+
+    <ul>
+      <li class="home"><a class="active" href="./index.html">Home</a></li>
+      <li class="Survey"><a href="survey.html">Survey</a></li>
+      <li class="News"><a href="CCSU-Hoste_Brochure.pdf" target="_blank">News</a></li>
+      <li class="cont"><a href="contact.html">Contact</a></li>
+      <li class="About"><a href="about.html">About</a></li>
+      <li class="log" style="float:right"><a href="login.html">Login</a></li>
+      <li class="sig" style="float:right"><a href="signup.html">Registration</a></li>
+    </ul>
+
+<h2 align="center">Tell us Your Feedback!<br>About Your Hostel</h2>
+<p>Your feedback is most important to us. We will provide solution as soon as possible.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Full Name:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Gender:</label>
+    </div>
+    <div class="col-75">
+      Male:<input type="radio" id="lname" name="gender" checked>
+	  Female:<input type="radio" id="lname" name="gender">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Enter Hostel registration ID:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Registration ID">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Date:</label>
+    </div>
+    <div class="col-75">
+      <input type="date" id="fname" name="firstname">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Select Your Hostel:</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+	    <option value="australia">- Choose Your Hostel -</option>
+        <option value="australia">Dr. K.P. (Boys) Hostel</option>
+        <option value="canada">Dr. R.K.Singh (Boys) Hostel</option>
+        <option value="usa">Dr.A.P.J.Abdul Kalam (Boys) Hostel</option>
+		<option value="australia">V.S.M.P. (Boys) Hostel</option>
+		<option value="australia">Pt. D. U. (Boys) Hostel</option>
+		<option value="australia">Rani Lakshmi Bai (Girls) Hostel</option>
+		<option value="australia">Durga Bhabhi (Girls) Hostel</option>
+      </select>
+    </div>
+  </div>
+  
+  
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Type:</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+	    <option value="australia">- Choose Feedback Type -</option>
+        <option value="australia">Cleaness</option>
+        <option value="canada">Food</option>
+        <option value="usa">Security</option>
+		<option value="australia">Request</option>
+        <option value="canada">Any Complain</option>
+      </select>
+    </div>
+  </div>
+  
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Department:</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">- Choose Your Department -</option>
+        <option value="canada">B.Tech</option>
+        <option value="usa">B.Sc(Computer Science)</option>
+		<option value="australia">BBA</option>
+        <option value="canada">MBA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Branch:</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+	    <option value="australia">- Choose Your Branch -</option>
+        <option value="australia">Computer Science & Engineering</option>
+        <option value="canada">Information Technology</option>
+        <option value="usa">Electronics & Communication Engineering</option>
+		<option value="australia">Agriculture Engineering</option>
+        <option value="canada">Mechanical Engineering</option>
+		<option value="canada">Chemical Engineering</option>
+        <option value="usa">Electronics & Instrumentation Engineering</option>
+		<option value="canada">Computer science</option>
+		<option value="canada">Mass Media(BBA)</option>
+		<option value="canada">Mass Media(MBA)</option>
+      </select>
+    </div>
+  </div>
+  
+  
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Feedback</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+</body>
+</html>

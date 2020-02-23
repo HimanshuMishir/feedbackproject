@@ -1,18 +1,210 @@
-<!DOCTYPE html>
-
 <html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <title>
+    CCS University Campus
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 10;
+      overflow: hidden;
+      background-color: #FC8110;
+
+    }
+
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: rgb(255, 217, 0);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: rgb(5, 204, 21);
+    }
+
+    li.log {
+      margin-left: 2px;
+      border-radius: 3px;
+      border: 1px solid rgb(255, 0, 0);
+    }
+
+    li.sig {
+      border-radius: 3px;
+      margin-left: 2px;
+      border: 1px solid rgb(240, 0, 0);
+    }
+
+    div.logo {
+      border-radius: 8px;
+      text-align: left;
+      margin: 5px;
+      padding-left: 20px;
+    }
+
+    div.gallery {
+      margin-left: 28px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 400px;
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+      transform: scale(1.5);
+      transition: .5s transform;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .footer {
+      padding: 20px;
+      display: block;
+      text-align: center;
+      background: #ddd;
+      color: #d3d3d3;
+      height: 20px;
+
+    }
+  </style>
 </head>
 
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+
+  <script>
+    alert("Please Take Survey!!");
+  </script>
+
+
+
+  <div class="logo">
+    <hr />
+    <img src="./Images/logo.png">
+    <img src="./Images/ccsu.png">
+  </div>
+
+
+  <ul>
+    <li class="home"><a class="active" href="home.html">Home</a></li>
+    <li class="Survey"><a href="survey.html">Survey</a></li>
+    <li class="News"><a href="CCSU-Hoste_Brochure.pdf" target="_blank">News</a></li>
+    <li class="cont"><a href="contact.html">Contact</a></li>
+    <li class="About"><a href="about.html">About</a></li>
+    <li class="log" style="float:right"><a href="login.html">Login</a></li>
+    <li class="sig" style="float:right"><a href="signup.html">Registration</a></li>
+  </ul>
+
+
+  <marquee onMouseOver="this.stop()" onMouseOut="this.start()" behavior="alternate" scrollamount="10">Please Provide
+    Your Feedback! <a href="feed1.html">Here</marquee>
+  <hr />
+  <div class="desc">
+    <h3>Boys Hostel</h3>
+  </div>
+  <hr />
+
+
+  <div class="gallery">
+    <a target="_self" href="kp.html">
+      <img src="./Images/kp.jpg" alt="Kailash Prakash Hostel" width="800" height=800">
+    </a>
+    <div class="desc">Dr. Kailash Prakash (Boys) Hostel</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_self" href="rk.html">
+      <img src="./Images/rk.jpg" alt="Dr. R.K. Singh Hostel" width="600" height="400">
+    </a>
+    <div class="desc">Dr. R.K. Singh (Boys) Hostel</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_self" href="ddu.html">
+      <img src="./Images/ddu.jpg" alt="Pt. Deendayal Upadhyay Hostel" width="600" height="400">
+    </a>
+    <div class="desc">Pt. Deendayal Upadhyay (Boys) Hostel</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_self" href="apj.html">
+      <img src="./Images/apj.jpg" alt="Dr. A.P.J. Abdul Kalam Hostel" width="600" height="400">
+    </a>
+    <div class="desc">Dr. A.P.J. Abdul Kalam (Boys) Hostel</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_self" href="./Images/mph.jpg">
+      <img src="./Images/mph.jpg" alt="V.S. Maharana Pratap Hostel" width="600" height="400">
+    </a>
+    <div class="desc">V.S. Maharana Pratap (Boys) Hostel</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_self" href="dbrah.html">
+      <img src="./Images/dbrah.png" alt="Dr. B.R. Ambedkar Hostel" width="600" height="400">
+    </a>
+    <div class="desc">Dr. B.R. Ambedkar (Boys) Hostel</div>
+  </div>
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <hr />
+
+
+  <div class="desc">
+    <h3>Girls Hostel</h3>
+  </div>
+  <hr />
+
+
+  <div class="gallery">
+    <a target="_self" href="rlb.html">
+      <img src="./Images/rlb.png" alt="Rani Lakshmi Bai(Girls) Hostel" width="600" height="400">
+    </a>
+    <div class="desc">Rani Lakshmi Bai(Girls) Hostel</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_self" href="apj.html">
+      <img src="./Images/dbh.jpg" alt="Durga Bhabhi (Girls) Hostel" width="600" height="400">
+    </a>
+    <div class="desc">Durga Bhabhi (Girls) Hostel</div>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <hr />
+
+  <div class="footer">
+    <div class="footer_bottom">
+      &copy; 2019-20 Designed & Developed By <a href="bbrc.html">BBRC Team!</a>
+    </div>
+    <h2></h2>
+  </div>
 
 </body>
+
 </html>

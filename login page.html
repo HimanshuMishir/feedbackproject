@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 24px;
+  margin: 15px ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-left:10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  height: 300px;
+  width: 400px;
+ margin: auto;
+}
+.signup {
+  padding: 16px;
+  height: 300px;
+  width: 400px;
+ margin: auto; 
+}
+.ccontainer {
+  padding: 1px;
+  height: 10px;
+  width: 400px;
+ margin: auto;
+}
+button[type=submit]{
+ padding: auto;
+ margin-left:10px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 12px;
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <body background="Wallpaper-v3-1600x900.jpg"length="1600"width="1600">
+
+<h2><i>Login Form</i></h2>
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me!
+	  <span class="psw">Forgot <a href="#">password?</a></span>
+    </label>  
+    <button type="submit"><a href="Submitted.html">Login</a></button>
+  </div>
+  <div class="signup">
+    <label>
+     &nbsp;&nbsp; Not Registered yet??
+    </label>
+    &nbsp;&nbsp;<button type="button" class="Signup">Sign up</button>
+  </div>
+
+  <div class="ccontainer" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+  </div>
+</form>
+
+</body>
+</html>
